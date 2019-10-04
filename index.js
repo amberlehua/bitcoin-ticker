@@ -14,7 +14,6 @@ app.get("/", function(req, res){
 
 app.post("/", function(req, res){
   //console.log(req.body.crypto);
-<<<<<<< HEAD
 
 
   request("https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD", function(error, response, body){
@@ -26,12 +25,6 @@ app.post("/", function(req, res){
 
   });
 
-=======
-});
-
-request("https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD", function(error, response, body){
-  console.log(body);
->>>>>>> 05d40d7ccb1518e13b5c5078ed920ae84b87fa6f
 });
 
 app.listen(3000, function(){
